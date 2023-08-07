@@ -93,8 +93,8 @@ function groupByStatus(data) {
 
   data.forEach((item) => {
     const { status } = item;
-    if (!resultData[`status-${status}`]) {
-      resultData[`status-${status}`] = [];
+    if (!newData[`status-${status}`]) {
+      newData[`status-${status}`] = [];
     }
     newData[`status-${status}`].push(item);
   });
